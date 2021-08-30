@@ -1,0 +1,238 @@
+/* tablet and mobile*/ 
+@media (max-width: 1023px) {
+    .header-bottom-list ,
+    .header-bottom-support,
+    .header-bottom-link-logo {
+        display: none;
+    }
+    .header-list-mobile,
+    .user-tablet,
+    .menu-tablet,
+    .logo-tablet {
+        display: block;
+        
+    }
+     .header-bottom {
+        justify-content: space-around;
+        color: var(--white-color);
+        background-color: var(--primary-color);
+    }
+    .header-list-mobile {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        left: 0;
+        background-color: var(--white-color);
+        padding: 0 80px;
+        display: none;
+        transform: translateY(-2px);
+        animation: growth linear 0.3s;
+    }
+    @keyframes growth {
+        from {
+           
+            transform: translateY(-40px);
+            opacity: 0;
+        }
+        to {
+            
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    .header-mobile-item {
+       
+    }
+    .header-mobile-icon {
+        color: var(--text-color);
+        font-size: 1.4rem;
+    }
+
+    .header-bottom-item-link {
+        padding: 12px 0;
+        border-bottom: 1px solid #EBEBEB;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .view-more-content-video {
+        width: 644px;
+    }
+}
+/* tablet */
+@media (max-width: 1023px) and (min-width: 740px) {
+    .view-more-content-video {
+        width: 644px;
+    }
+    .slider-info {
+        position: absolute;
+        left: 0;
+        top: 12%;
+        text-align: center;
+    }
+    .slider-info-location {
+        font-size: 4.8rem;
+        color: var(--text-color);
+    }
+    .slider-info-slogan {
+        font-size: 8rem;
+    }
+    .slider-info-description {
+        font-weight: 600;
+        color: var(--black-color);
+    }
+    .cell {
+        width: 50%;   
+    }
+    .carousel-cell {
+        width: 50%;
+    }
+    .top-reviews-contents {
+        position: absolute;
+        top: 6%;
+        right: 0;
+        text-align: center;
+    }
+    .section-team-member-img {
+        width: 100%;  
+    }
+    .section-team-content {
+        width: 96%;
+        left: -8px;
+        bottom: -1px;
+    }
+    .section-team-member {
+        padding-bottom: 10px;
+    }
+    .counter-up {
+        height: 300px;
+        position: relative;
+        top: -6px;
+    }
+    .choose-info-slogan {
+        font-size: 5rem;
+    }
+    .choose-info-description {
+        font-size: 1.6rem;
+        line-height: 26px;
+    }
+    .choose-image:nth-child(3)  {
+        margin-top: 30px;
+    }
+}
+
+/* mobile */
+@media (max-width: 739px) {
+    .menu-tablet i {
+        font-size: 1.6rem;
+    }
+    /* logo */
+    .header-bottom-img {
+        width: 108px;
+        height: 36px;
+    }
+    .user-tablet i {
+        font-size: 2.4rem;
+    }
+    .winter-holiday-content-slogan,
+    .view-more-content-headding {
+        font-size: 3.3rem;
+    }
+    .winter-holiday-content-headding,
+    .view-more-content-name {
+        font-size: 3.5rem;
+    }
+    .view-more-content-video {
+        width: 331px;
+        height: 195px;
+    }   
+    .img-btn-video {
+        position: relative;
+        top: -135px;
+        left: 142px;
+    }
+    .flex-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .view-more-content-btn {
+        left: 13%;
+    }
+    .slider-info {
+        position: absolute;
+        top: 24%;
+        left: 0;
+        text-align: center;
+    }
+    .slider-info-location {
+        font-size: 3.4rem;
+        color: var(--text-color);
+    }
+    .slider-info-slogan {
+        font-size: 3.5rem;
+        
+    }
+    .slider-info-description {
+        font-size: 1.5rem;
+        color: var(--text-color);
+        font-weight: 600;
+    }
+    .cell {
+        width: 100%;   
+    }
+    .carousel .main-carousel .flickity-prev-next-button,
+    .content .main-carousel .flickity-prev-next-button {
+        display: none;
+    }
+    .carousel-cell {
+        width: 100%;
+    }
+    .top-reviews-slogan {
+        font-size: 4.5rem;    
+    }
+    .top-reviews-description {
+        font-size: 1.3rem;
+    }
+    .top-reviews-contents {
+        position: absolute;
+        top: 8%;
+        right: -1%;
+    }
+    .section-team-member-img {
+        width: 100%;
+    }
+    .section-team-content {
+        width: 98%;
+        left: -12px;
+    }
+    .counter-up {
+        height: 500px;
+        position: relative;
+        top: -6px;
+    }
+    .choose-info-location {
+        font-size: 3.3rem;
+    }
+    .choose-info-slogan {
+        font-size: 3.5rem;
+    }
+    .choose-info-description {
+        font-size: 1.7rem;
+    }
+    .choose-image {
+        margin-bottom: 20px;
+    }
+    .section-footer {
+        padding: 0;
+        text-align: left;
+    }
+    .section-footer-body:nth-child(4) {
+        padding-bottom: 70px;
+        border-bottom: 1px solid #ccc;
+    }
+    .footer-contact-end {
+        margin: 60px;
+    }
+}
