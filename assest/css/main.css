@@ -115,7 +115,7 @@
     background-color: var(--primary-color);
     margin: 0;
     display: none;
-    z-index: 2;
+    z-index: 1;
     animation: growth ease-in 0.3s;
 }
 .header-individual-language-item {
@@ -223,6 +223,7 @@
     width: 184px;
     right: 0;
     display: none;
+    transform-origin: top center;
     animation: growth ease-in 0.3s;
     z-index: 1;
 }
@@ -273,19 +274,16 @@
     left: 10px;
     padding-left: 0;
     border-radius: 3px;
-    animation: growth ease-in 0.5s;
+    animation: growth ease-in 0.4s;
     z-index: 1;
+    transform-origin: top center ;
 }
 @keyframes growth {
-    from {
-       
-        transform: translateY(-40px);
-        opacity: 0;
+    0% {
+        transform: scaleY(0);
     }
-    to {
-        
-        transform: translateY(0);
-        opacity: 1;
+    100% {
+        transform: scaleY(1);
     }
 }
 .header-inner-item:first-child {
@@ -344,6 +342,7 @@
     display: none;
     padding: 30px 0;
     top: 42px;
+    transform-origin: top center;
     animation: growth ease-in 0.3s;
     z-index: 2;
 }
@@ -377,11 +376,12 @@
     top: 100%;
     left: -117%;
     display: none;
-    animation: growth ease-in 0.5s;
+    animation: growth ease-in 0.3s;
     z-index: 1;
     width: 248px;
     list-style: none;
     padding-left: 0;
+    transform-origin: top center;
 }
 .header-inner-item-shop:first-child {
     margin-top: 30px;
@@ -415,6 +415,7 @@
     top: -66%;
     right: 100%;
     display: none;
+    transform-origin: top center;
     animation: growth ease-in 0.3s;
     z-index: 1;
     width: 248px;
@@ -458,8 +459,9 @@
    left: -1012px;
    top: 100%;
    display: none;
-   animation: growth ease-in 0.5s;
+   animation: growth ease-in 0.3s;
    z-index: 1;
+   transform-origin: top center;
 }
 .inner-list {
     display: flex;
@@ -504,7 +506,7 @@
 .slider {
     height: 480px;
     background-color: aliceblue;
-    background: url('/assest/img/from\ alps.jpg') top center / cover no-repeat ;
+    background: url(../img/from_alps.jpg) top center / cover no-repeat ;
     position: relative;
     top: -2px;
 }
